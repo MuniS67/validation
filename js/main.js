@@ -20,6 +20,7 @@ forma.onsubmit = (event) => {
     submit(forma);
     inps.forEach((inp) => inp.classList.remove("red"));
   } else {
+    inps.forEach((inp) => inp.classList.remove("red"));
     errArr.forEach((inp) => inp.classList.add("red"));
   }
 };
