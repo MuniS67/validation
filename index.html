@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .inps {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin: 100px auto 0;
+      }
+      input {
+        border-radius: 15px;
+        border: 1px solid gray;
+        width: 100%;
+        height: 50px;
+        outline-color: gray;
+        padding: 0 0 0 10px;
+      }
+      input[data-imp] {
+        border: 1px solid blue;
+        outline-color: blue;
+      }
+      button {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+      }
+      .red {
+        border: 1px solid red !important;
+        outline-color: red !important;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="test">
+      <div class="inps">
+        <input type="name" name="name" data-imp="blue" placeholder="name" />
+        <input type="surname" name="surname" placeholder="surname" />
+        <input type="email" name="email" data-imp="blue" placeholder="email" />
+        <input type="tel" name="number" placeholder="number" />
+        <input type="name" name="mom's name" placeholder="mom's name" />
+        <input type="name" name="pap's name" placeholder="pap's name" />
+        <input type="number" name="age" data-imp="blue" placeholder="age" />
+        <input
+          type="text"
+          name="about you"
+          data-imp="blue"
+          placeholder="about you"
+        />
+        <input type="text" name="js" data-imp="blue" placeholder="js" />
+        <input type="text" name="html" data-imp="blue" placeholder="html" />
+        <input type="text" name="css" data-imp="blue" placeholder="css" />
+        <input type="text" name="car" placeholder="car" />
+      </div>
+      <button type="submit">Send</button>
+    </form>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
